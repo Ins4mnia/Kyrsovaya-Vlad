@@ -1,0 +1,42 @@
+@use "@/scss/variables.scss" as *;
+.Page {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  &__title {
+    @include title();
+    color: $Black;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    &__line {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid $LightGray;
+      &__icons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 12px;
+      }
+      &__title {
+        width: 200px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17.07px;
+        color: $LightGray;
+      }
+      &__info {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17.07px;
+      }
+    }
+  }
+}

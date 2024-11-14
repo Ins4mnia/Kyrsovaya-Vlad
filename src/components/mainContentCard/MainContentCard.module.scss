@@ -1,0 +1,30 @@
+.MainContentCard {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  position: relative;
+  border: 1px solid #235ef133;
+  &__gradient {
+    position: absolute;
+    border-radius: 10px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 75%, #000000 100%);
+  }
+  &__text {
+    position: absolute;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.94px;
+    z-index: 20;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: #f8f8f8;
+  }
+}

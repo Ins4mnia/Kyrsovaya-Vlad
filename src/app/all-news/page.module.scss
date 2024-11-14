@@ -1,0 +1,18 @@
+@use "@/scss/variables.scss" as *;
+
+.Page {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  &__title {
+    @include title();
+    color: $Black;
+  }
+  &__news {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+}

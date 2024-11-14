@@ -1,0 +1,33 @@
+@use "@/scss/variables.scss" as *;
+
+.Header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0px;
+  margin-bottom: 60px;
+  border-bottom: 1px solid $LightGray;
+  &__logo {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29.26px;
+  }
+  &__links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    a {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 17.07px;
+      cursor: pointer;
+      color: #292929;
+      transition: color 0.1s ease;
+      &:hover {
+        color: #636363;
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+$Black: #292929;
+$LightGray: #777777;
+
+@mixin title() {
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 51.2px;
+  color: $Black;
+}

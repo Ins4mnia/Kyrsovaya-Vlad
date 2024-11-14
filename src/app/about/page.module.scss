@@ -1,0 +1,32 @@
+@use "@/scss/variables.scss" as *;
+
+.Page {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  &__title {
+    @include title();
+    color: $Black;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
+    &__text {
+      max-width: 603px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      p {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17.07px;
+      }
+    }
+  }
+}

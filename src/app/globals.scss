@@ -1,0 +1,22 @@
+@use "@/scss/variables.scss" as *;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: $Black;
+}
+
+.container {
+  max-width: 1228px;
+  margin: 0 auto;
+}
+
+.main {
+  min-height: 70vh;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
