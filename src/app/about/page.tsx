@@ -20,10 +20,24 @@ const Page: NextPage = ({}) => {
               инициативы, направленные на улучшение качества медицинской помощи.
             </p>
           </div>
-          <Image src="/AboutImage1.jpg" width={605} height={200} alt="Фотография" style={{ objectFit: "cover", borderRadius: "10px" }} />
+          <Image
+            src="/AboutImage1.jpg"
+            className={s.Page__content__image}
+            width={605}
+            height={200}
+            alt="Фотография"
+            style={{ objectFit: "cover", borderRadius: "10px" }}
+          />
         </div>
         <div className={s.Page__content__wrapper}>
-          <Image src="/AboutImage2.jpg" width={605} height={200} alt="Фотография" style={{ objectFit: "cover", borderRadius: "10px" }} />
+          <Image
+            src="/AboutImage2.jpg"
+            className={s.Page__content__image}
+            width={605}
+            height={200}
+            alt="Фотография"
+            style={{ objectFit: "cover", borderRadius: "10px" }}
+          />
           <div className={s.Page__content__text}>
             <p>
               Наша команда состоит из профессиональных журналистов, имеющих опыт работы в медицинской сфере. Мы тщательно проверяем все факты и

@@ -4,6 +4,9 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+  @media (max-width: 768px) {
+    padding: 0px 15px;
+  }
   &__title {
     @include title();
     color: $Black;
@@ -12,20 +15,41 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
+    &__image {
+      width: 100%;
+      height: auto;
+    }
+    @media (max-width: 768px) {
+      gap: 40px;
+    }
     &__wrapper {
       display: flex;
       flex-direction: row;
       gap: 20px;
+      @media (max-width: 768px) {
+        gap: 32px;
+        flex-direction: column;
+      }
     }
     &__text {
       max-width: 603px;
       display: flex;
       flex-direction: column;
       gap: 8px;
+      @media (max-width: 768px) {
+        gap: 15px;
+      }
       p {
         font-size: 14px;
         font-weight: 500;
         line-height: 17.07px;
+        @media (max-width: 768px) {
+          font-size: 18px;
+          line-height: 1.7;
+          padding: 10px;
+          border-radius: 10px;
+          box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+        }
       }
     }
   }

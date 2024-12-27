@@ -8,6 +8,9 @@
   border-radius: 10px;
   position: relative;
   border: 1px solid #235ef133;
+  @media (max-width: 768px) {
+    height: 400px;
+  }
   &__gradient {
     position: absolute;
     border-radius: 10px;
